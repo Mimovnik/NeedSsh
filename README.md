@@ -3,6 +3,8 @@
 - zsh
 - oh my zsh
 - xclip
+- keychain
+- openssh
 (All available on Manjaro with AUR enabled)
 
 ### Instalation
