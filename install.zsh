@@ -1,7 +1,5 @@
 #!/usr/bin/zsh
 
-BINARY_DIR="/usr/local/bin"
+sudo cp bwcopy /usr/local/bin
 
-cp bwcopy $BINARY_DIR/
-
-cp need-ssh.zsh $ZSH_CUSTOM/
+cp need-ssh.zsh ~/.oh-my-zsh/custom

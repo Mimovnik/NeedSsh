@@ -1,10 +1,6 @@
 #!/usr/bin/zsh
 
-BINARY_DIR="/usr/local/bin"
-BWCOPY=$BINARY_DIR/bwcopy
-NEED_SSH=$ZSH_CUSTOM/need-ssh.zsh
+sudo rm /usr/local/bin/bwcopy
 
-rm $BWCOPY
-
-rm $NEED_SSH
+rm ~/.oh-my-zsh/custom/need-ssh.zsh
 
