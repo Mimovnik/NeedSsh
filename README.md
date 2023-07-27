@@ -5,20 +5,25 @@
 - xclip
 - keychain
 - openssh
-(All available on Manjaro with AUR enabled)
 
 ### Instalation
-Put `bwpassword` in `/usr/local/bin`. Put `ssh-agent.zsh` in `$ZSH_CUSTOM` directory.
+```
+chmod +x install.zsh
+```
+```
+./install.sh
+```
 
 ### Use
 
 ##### Get password from bitwarden vault
-1. Open terminal.
-2. Type `bwpassword <your bitwarden password name>`.
-3. Type in your bitwarden master password.
+1. Open new terminal.
+2. Type `bw login` to login to your bitwarden vault.
+3. Type `bwcopy <your bitwarden password name>`.
+4. Type in your bitwarden master password.
     Now you have your password in the clipboard. If that was your goal you're done.
 
 ##### Start an ssh agent
-4. With your ssh password in the clipboard type `need-ssh`.
-5. Paste your password from the clipboard.
+5. With your ssh password in the clipboard type `need-ssh`.
+6. Paste your password from the clipboard.
    Done.
