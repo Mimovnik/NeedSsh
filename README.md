@@ -29,7 +29,7 @@ chmod +x install.zsh
 #### Note
 In case need-ssh ask for a password outside a terminal via kssaskpass you can try to disable it by:
 1. uninstalling kssaskpass
-2. appending `unset SSH_ASKPASS;` in your `.zshrc` manually or using this command: `echo "unset SSH_ASKPASS;" >> ~/.zshrc"
+2. appending `unset SSH_ASKPASS;` in your `.zshrc` manually or using this command: `echo "unset SSH_ASKPASS;" >> ~/.zshrc"`
 
 ### Uninstalation
 ```
