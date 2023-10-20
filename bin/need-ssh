@@ -7,7 +7,7 @@ PASSWORD_NAME=""
 
 if [[ ! -f $PASSWORD_NAME_FILE ]] then;
     mkdir -p $DOTFILE_DIR
-    echo -n "Enter the password name to your ssh agent: "
+    echo -n "Enter the name of your ssh passphrase from your vault: "
     read PASSWORD_NAME
     echo $PASSWORD_NAME > $PASSWORD_NAME_FILE
 fi
