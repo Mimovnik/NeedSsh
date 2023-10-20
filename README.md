@@ -31,5 +31,5 @@ Use bitwarden-cli to fetch your vault in case
 ### Uninstallation
 
 ```
-sudo rm /usr/local/bin/bwcopy
+sudo rm /usr/local/bin/need-ssh
 ```
