@@ -1,38 +1,35 @@
+# need-ssh
+`need-ssh` is a simple script to automate ssh-agent authentication
+
 ### Prerequisites
+
 - bitwarden-cli
 - zsh
-- oh my zsh
-- xclip
 - keychain
 - openssh
+- sshpass
 
-### Instalation
+### Installation
+
 ```
-chmod +x install.zsh
-./install.sh
+sudo cp need-ssh /usr/local/bin
 ```
 
-### Use
+### One time preperation
 
-##### Get password from bitwarden vault
-1. Open new terminal.
-2. Type `bw login` to login to your bitwarden vault.
-3. Type `bwcopy <your bitwarden password name>`.
-4. Type in your bitwarden master password.
-    Now you have your password in the clipboard. If that was your goal you're done.
+Type `bw login` to login to your bitwarden vault.
+Bitwarden-cli will now remember your login.
+Note:
+Use bitwarden-cli to fetch your vault in case 
 
-##### Start an ssh agent
-5. With your ssh password in the clipboard type `need-ssh`.
-6. Paste your password from the clipboard.
-   Done.
+### Usage
 
-#### Note
-In case need-ssh ask for a password outside a terminal via kssaskpass you can try to disable it by:
-1. uninstalling kssaskpass
-2. appending `unset SSH_ASKPASS;` in your `.zshrc` manually or using this command: `echo "unset SSH_ASKPASS;" >> ~/.zshrc"`
+1. Open a new terminal after installation
+2. Type `need-ssh`.
+3. Type your bitwarden master password.
 
-### Uninstalation
+### Uninstallation
+
 ```
-chmod +x uninstall.zsh
-./uninstall.sh
+sudo rm /usr/local/bin/bwcopy
 ```
