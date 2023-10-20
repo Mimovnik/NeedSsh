@@ -5,7 +5,7 @@ PASSWORD_NAME_FILE=$DOTFILE_DIR"/password-name.txt"
 SSHPASS_PROMPT_HOOK="passphrase"
 PASSWORD_NAME=""
 
-if [[ ! -d $DOTFILE_DIR ]] then;
+if [[ ! -f $PASSWORD_NAME_FILE ]] then;
     mkdir -p $DOTFILE_DIR
     echo -n "Enter the password name to your ssh agent: "
     read PASSWORD_NAME
@@ -13,13 +13,6 @@ if [[ ! -d $DOTFILE_DIR ]] then;
 fi
 
 PASSWORD_NAME=$(cat $PASSWORD_NAME_FILE)
-
-if [[ -z $PASSWORD_NAME ]] then;
-    echo -n "Enter the password name to your ssh agent: "
-    read PASSWORD_NAME
-    echo $PASSWORD_NAME > $PASSWORD_NAME_FILE
-    return 1
-fi
 
 PASSWORD=$(bw get password $PASSWORD_NAME)
 

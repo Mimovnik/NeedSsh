@@ -32,6 +32,6 @@ Use bitwarden-cli to fetch your vault in case
 ### Uninstallation
 
 ```
-rm ~/.need-ssh
+rm ~/.need-ssh -rf
 sudo rm /usr/local/bin/need-ssh
 ```
