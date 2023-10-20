@@ -12,7 +12,8 @@
 ### Installation
 
 ```
-sudo cp need-ssh /usr/local/bin
+git clone https://github.com/Mimovnik/NeedSsh ~/.need-ssh 
+sudo cp ~/.need-ssh/bin/need-ssh /usr/local/bin
 ```
 
 ### One time preperation
@@ -31,5 +32,6 @@ Use bitwarden-cli to fetch your vault in case
 ### Uninstallation
 
 ```
+rm ~/.need-ssh
 sudo rm /usr/local/bin/need-ssh
 ```
